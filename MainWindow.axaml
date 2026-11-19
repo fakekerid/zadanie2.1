@@ -1,0 +1,31 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="380" d:DesignHeight="320"
+        Width="380" Height="320"
+        x:Class="_2._1_stoper_4tc_1_iwo_k.MainWindow"
+        Title="Stoper">
+    <StackPanel Margin="24" Spacing="20" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <TextBlock Text="STOPER" FontSize="18" FontWeight="SemiBold" HorizontalAlignment="Center" Foreground="#555" />
+        
+        <TextBlock Name="TimeDisplay" Text="00:00.00" FontSize="52" FontWeight="Bold" HorizontalAlignment="Center" />
+
+        <StackPanel Orientation="Horizontal" Spacing="12" HorizontalAlignment="Center">
+            <Button Name="StartButton" Content="Start" Width="90" Height="40"
+                    HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
+                    FontSize="16" FontWeight="SemiBold"
+                    Click="StartButton_Click" />
+            
+            <Button Name="StopButton" Content="Stop" Width="90" Height="40"
+                    HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
+                    FontSize="16" FontWeight="SemiBold"
+                    Click="StopButton_Click" />
+            
+            <Button Name="ResetButton" Content="Reset" Width="90" Height="40"
+                    HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
+                    FontSize="16" FontWeight="SemiBold"
+                    Click="ResetButton_Click" />
+        </StackPanel>
+    </StackPanel>
+</Window>
